@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+       .my-menu { 
+       text-align: center;  
+       } 
+       .btn-id { 
+       text-align: center;  
+       } 
+  </style>
+  </head>
+
+<div class="container">
+  <br>
+  <h2 style="text-align: center;color:blue">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark"></nav>
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="students" class="nav-link" routerLinkActive="active">Student List</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="add" class="nav-link" routerLinkActive="active">Register Student</a>
+        </li>
+      </ul>
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+</html>
