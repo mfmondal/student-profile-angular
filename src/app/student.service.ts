@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class StudentService {
-  private baseUrl = 'http://http://52.72.118.178/:8081/angular-springboot/api/v1/students';
+  private baseUrl = 'http://52.72.118.178/:8081/angular-springboot/api/v1/students';
 
   constructor(private http: HttpClient) { }
 
