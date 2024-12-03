@@ -14,5 +14,3 @@ EXPOSE 80 81 443
 CMD ["nginx", "-g", "daemon off;"]
 
 
-#FROM nginx:1.23.1-alpine
-#COPY /dist/student-profile /usr/share/nginx/html
