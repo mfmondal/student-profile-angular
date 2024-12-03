@@ -50,7 +50,7 @@ pipeline{
         }
 		
 
-    stage ("docker push") {
+    stage ("docker push to ECR") {
          steps {
              script {
                 sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 908066074929.dkr.ecr.us-east-1.amazonaws.com'
